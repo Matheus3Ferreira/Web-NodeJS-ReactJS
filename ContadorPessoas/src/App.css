@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@600&display=swap');
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+p,
+h1 {
+  text-align: center;
+}
+
+.containerCounter {
+  border: 1px solid;
+  padding: 0.5rem;
+  margin: 3rem auto;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 84px;
+  font-family: "Gluten";
+  font-weight: 600;
+}
