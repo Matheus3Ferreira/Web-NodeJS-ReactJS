@@ -12,7 +12,7 @@ function App() {
           <section className="container-information">
             <h3 className="title">Dados pessoais</h3>
             <ul className="list">
-              <ol>Endereço: Rua São Domingos 490 Fundos, Morro São Bento, Santos-SP</ol>
+              <ol>Endereço: Rua São Domingão 777 Fundos, Morro São Bento, Santos-SP</ol>
               <ol>Telefone: (13) 3224-4214</ol>
               <ol>Celular: (13) 92000-4406</ol>
             </ul>
