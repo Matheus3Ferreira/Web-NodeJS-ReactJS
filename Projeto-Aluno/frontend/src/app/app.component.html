@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Students</h1>
+  <div [formGroup]="formStudent">
+    Nome: <br/><input formControlName="name"><br />
+    Date: <br/><input formControlName="birthday" type="date">
+    <button (click)="create()">Create</button>
+  </div>
+  
+  <hr />
+  
+  <div *ngFor="let student of students">
+    <span *ngIf="!student.editing">
+      {{ student.name }}
+    </span>
+    <input *ngIf="student.editing" [value]="student.name" (input)="student.name = $event.target.value"/> 
+    - {{ student.birthday | date }} 
+
+    <ng-container *ngIf="!student.saving">
+      <button (click)="handleEditUser(student)">{{ !student.editing ? 'Editar' : 'Cancelar'}}</button> 
+      <button *ngIf="student.editing" (click)="saveUser(student)">Salvar</button> 
+      <button (click)="deleteUser(student.id)">Delete</button>
+    </ng-container>
+  </div>
+</div>
